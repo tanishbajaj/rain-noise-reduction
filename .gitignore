@@ -37,9 +37,9 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Audio files (optional - uncomment if you don't want to track audio files)
-# audio/*.wav
-# audio/*.mp3
+# Audio files
+audio/*.wav
+audio/*.mp3
 
 # Flask
 instance/
