@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rain Noise Reduction (Spectral Subtraction)</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>🌧️ Rain Noise Reduction using Spectral Subtraction</h1>
+
+  <div class="upload-section">
+    <h2>Upload Files</h2>
+    <p class="hint">
+      Provide a recording of speech containing rain noise in the first field and a separate rain-only sample in the second field. The system uses Spectral Subtraction + Wiener Filter for effective noise reduction.
+    </p>
+    <label>Noisy Speech (rainy) File (.wav):</label>
+    <input type="file" id="speechFile" accept=".wav"><br><br>
+
+    <label>Rain Noise Reference File (.wav):</label>
+    <input type="file" id="noiseFile" accept=".wav"><br><br>
+
+    <button id="processBtn">Process Audio</button>
+  </div>
+
+  <div class="audio-section">
+    <h2>Original Speech</h2>
+    <audio id="originalAudio" controls></audio>
+
+    <h2>Filtered Output</h2>
+    <audio id="filteredAudio" controls></audio>
+  </div>
+
+  <div id="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
